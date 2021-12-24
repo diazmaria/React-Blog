@@ -12,7 +12,7 @@ export const Home = () => {
           type specimen book.
         </div>
       </div>
-      <BlogSection hideDescription />
+      <BlogSection />
     </div>
   );
 };

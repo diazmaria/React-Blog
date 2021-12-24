@@ -13,10 +13,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/software-engineering" element={<BlogSection />}></Route>
-        <Route path="/dev-ops" element={<BlogSection />}></Route>
-        <Route path="/soft-skills" element={<BlogSection />}></Route>
-        <Route path="/about"></Route>
+        <Route exact path="/about"></Route>
+        <Route path="/:slug" element={<BlogSection />}></Route>
+        <Route path="/:slug" element={<BlogSection />}></Route>
+        <Route path="/:slug" element={<BlogSection />}></Route>
+        <Route path="/:slug"></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

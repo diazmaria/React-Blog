@@ -1,22 +1,21 @@
 import { Link } from "react-router-dom";
 
-export const Card = () => {
+export const Card = ({item}) => {
   return (
     <Link to="">
       <article className="card">
         <div
           className="card__image"
           style={{
-            backgroundImage: `url("https://i.ytimg.com/vi/aJ5dZaWofmg/hqdefault.jpg")`,
+            backgroundImage: `url(${item.image})`,
           }}
         ></div>
         <div>
           <div className="card__metadata">
-            <p className="card__title">Lorem ipsum dolor sit</p>
-            <div className="card__category">Soft Skills</div>
+            <p className="card__title">{item.title}</p>
+            <div className="card__category">{item.category}</div>
             <p className="card__description">
-              Lorem Ipsum, masaüstü yayıncılık ve basın yayın sektöründe
-              kullanılan...
+            {item.description}
             </p>
           </div>
         </div>
