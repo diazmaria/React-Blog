@@ -1,0 +1,13 @@
+.card-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
