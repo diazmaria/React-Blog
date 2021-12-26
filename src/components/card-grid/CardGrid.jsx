@@ -17,7 +17,7 @@ export const CardGrid = ({ section }) => {
       }
     };
     fetchData();
-  }, []);
+  }, [section]);
 
   return (
     <div className="card-grid">

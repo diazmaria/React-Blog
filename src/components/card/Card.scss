@@ -3,13 +3,13 @@ $medium-grey: #4a5568;
 $green-cat: #53f567;
 
 .card {
-  max-width: 360px;
-  margin: 30px 12px;
+  max-width: 290px;
+  margin: 20px 12px;
   border: none;
   transition: 0.3s;
 
   &__image {
-    height: 220px;
+    height: 180px;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -24,29 +24,17 @@ $green-cat: #53f567;
     padding: 12px;
   }
 
-  &__category {
-    padding: 2px 14px;
-    font-size: 14px;
-    background: $green-cat;
-    width: fit-content;
-    border-radius: 15px;
-    text-align: center;
-    margin: 10px 0;
-    color: #4a5568;
-  }
-
   &__title {
-    font-size: 19px;
+    font-size: 26px;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
   }
 
   &__description {
-    color: $medium-grey;
-    margin: 0;
+    color: #727272;
     line-height: 1.5;
     font-size: 17px;
-    margin-bottom: 7px;
+    font-weight: bold;
   }
 }

@@ -1,0 +1,35 @@
+.post {
+  &__title {
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+
+  hr {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__item {
+    list-style-type: none;
+    width: 900px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #5c5c5c;
+  }
+
+  &__image {
+    max-height: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+}

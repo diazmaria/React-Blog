@@ -4,13 +4,30 @@ export const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-        <h1 className="navbar__title"><Link to="/">Senior Upskilling Blog</Link></h1>
+        <h1 className="navbar__title">
+          <Link to="/">Senior Upskilling Portfolio</Link>
+        </h1>
         <ul className="navbar__menu">
-          <li><Link to="/software-engineering">Software Engineering</Link></li>
-          <li><Link to="/dev-ops">Dev-Ops</Link></li>
-          <li><Link to="/soft-skills">Soft Skills</Link></li>
-          <li><Link to="/about">About</Link></li>
+          <li>
+            <Link to="/hardskills">Hard Skills</Link>
+          </li>
+          <li>
+            <Link to="/softskills">Soft Skills</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
         </ul>
+        <div className="navbar__quote">
+          <hr />
+          <p>
+            Excitement comes from the achivement.
+            <br />
+            Fulfillment comes from the journey that got you there
+          </p>
+          <p>- Simon Sinek</p>
+          <hr />
+        </div>
       </div>
     </nav>
   );

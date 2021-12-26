@@ -1,20 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@200&display=swap");
 $saira-font: "Saira Condensed", "sans serif";
-$coral: #ff8882;
-$primary: #383838;
 
 body,
 a {
-  color: $primary;
+  color: #383838;
   text-decoration: none;
+  font-family: $saira-font;
 }
 
 a:hover {
-  color: $coral;
-}
-
-h1,
-h2 {
-  font-family: $saira-font;
+  color: #176f9a;
 }

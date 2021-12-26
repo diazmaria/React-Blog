@@ -6,7 +6,6 @@ export const BlogSection = () => {
 
   return (
     <div className="blog-section">
-      <hr />
       <h2 className="blog-section__title">{slug}</h2>
       <hr />
       <CardGrid section={slug} />
