@@ -1,15 +1,22 @@
 .navbar {
+  color: white;
+  text-shadow: 1px 1px rgb(36, 36, 36);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px 0;
-  background-image: url("https://i.ibb.co/QcyBWzb/Vivid-blurred-colorful-wallpaper-background.jpg");
+  background-image: url("https://media.istockphoto.com/photos/blue-light-defocused-blurred-motion-abstract-background-picture-id1212284111?k=20&m=1212284111&s=612x612&w=0&h=sYaAKVxAEmsDVmbXs_iMzZkzanRlfB4nMWp7QsULWD0=");
   background-size: cover;
 
   &__title {
     font-size: 60px;
     margin-bottom: 30px;
     font-weight: bold;
+
+    a:hover {
+      opacity: 70%;
+      color: white;
+    }
   }
 
   &__menu {
@@ -17,6 +24,11 @@
     position: relative;
     padding-left: 0px;
     margin-bottom: 0px;
+
+    a:hover {
+      opacity: 70%;
+      color: white;
+    }
 
     li {
       list-style: none;
@@ -26,6 +38,8 @@
     a {
       font-size: 28px;
       font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px rgb(36, 36, 36);
     }
   }
 

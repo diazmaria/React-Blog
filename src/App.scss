@@ -8,6 +8,7 @@ a {
   font-family: $saira-font;
 }
 
-a:hover {
-  color: #176f9a;
+h1 a {
+  color: white;
+  text-shadow: 1px 1px rgb(36, 36, 36);
 }

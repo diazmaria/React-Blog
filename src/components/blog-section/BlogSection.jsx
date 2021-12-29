@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import { CardGrid } from "../card-grid/CardGrid";
 
 export const BlogSection = () => {
-  const { slug = "trending" } = useParams();
+  const { slug = "latest" } = useParams();
 
   return (
     <div className="blog-section">
