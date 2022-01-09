@@ -52,3 +52,25 @@ jobs:
                 cd repo
                 yarn
                 yarn build
+  - name: deploy
+    serial_groups:
+      - blog-pipeline
+    public: true
+    plan:
+      - get: repo
+        passed: [build]
+        trigger: true
+      - task: deploy
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: { repository: node }
+          inputs:
+            - name: repo
+          run:
+            path: sh
+            args:
+              - "-exc"
+              - |-
+                echo deploying app now.... work in progress
