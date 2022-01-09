@@ -13,7 +13,8 @@
     "react-router-dom": "6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.45.1",
-    "web-vitals": "^2.1.2"
+    "web-vitals": "^2.1.2",
+    "jest": "27.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,8 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "jest": "^27.4.7"
   }
 }
