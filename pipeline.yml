@@ -1,0 +1,47 @@
+resources:
+  - name: repo
+    type: git
+    source:
+      uri: https://github.com/diazmaria/React-Blog.git
+      branch: main
+jobs:
+  - name: unit-tests
+    public: true
+    plan:
+      - get: repo
+      - task: unit-tests
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: { repository: node }
+          inputs:
+            - name: repo
+          run:
+            path: sh
+            args:
+              - "-exc"
+              - |-
+                cd repo
+                pwd
+                ls
+                yarn
+                jest
+                pwd
+  - name: build-job
+    public: true
+    plan:
+      - get: repo
+        passed:
+          - unit-tests
+      - task: build
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: { repository: node }
+          inputs:
+            - name: repo
+          run:
+            path: yarn
+            args: [build]
