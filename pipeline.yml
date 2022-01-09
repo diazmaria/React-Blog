@@ -6,9 +6,12 @@ resources:
       branch: main
 jobs:
   - name: unit-tests
+    serial_groups:
+      - blog-pipeline
     public: true
     plan:
       - get: repo
+        trigger: true
       - task: unit-tests
         config:
           platform: linux
@@ -23,17 +26,16 @@ jobs:
               - "-exc"
               - |-
                 cd repo
-                pwd
-                ls
                 yarn
-                jest
-                pwd
+                yarn test
   - name: build-job
+    serial_groups:
+      - blog-pipeline
     public: true
     plan:
       - get: repo
-        passed:
-          - unit-tests
+        passed: [unit-tests]
+        trigger: true
       - task: build
         config:
           platform: linux
@@ -43,5 +45,10 @@ jobs:
           inputs:
             - name: repo
           run:
-            path: yarn
-            args: [build]
+            path: sh
+            args:
+              - "-exc"
+              - |-
+                cd repo
+                yarn
+                yarn build
