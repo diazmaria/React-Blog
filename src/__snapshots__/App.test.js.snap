@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div>
+  <nav>
+    <div
+      class="navbar"
+    >
+      <h1
+        class="navbar__title"
+      >
+        <a
+          href="/"
+        >
+          Senior Upskilling Portfolio
+        </a>
+      </h1>
+      <ul
+        class="navbar__menu"
+      >
+        <li>
+          <a
+            href="/hardskills"
+          >
+            Hard Skills
+          </a>
+        </li>
+        <li>
+          <a
+            href="/softskills"
+          >
+            Soft Skills
+          </a>
+        </li>
+        <li>
+          <a
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+      </ul>
+      <div
+        class="navbar__quote"
+      >
+        <hr />
+        <p>
+          Excitement comes from the achivement.
+          <br />
+          Fulfillment comes from the journey that got you there
+        </p>
+        <p>
+          - Suraj Kalsi
+        </p>
+        <hr />
+      </div>
+    </div>
+  </nav>
+  <div
+    class="blog-section"
+  >
+    <h2
+      class="blog-section__title"
+    >
+      latest
+    </h2>
+    <hr />
+    <div
+      class="card-grid"
+    >
+      <div
+        class="card-grid__content"
+      />
+    </div>
+  </div>
+  <footer>
+    <div
+      class="footer-copyright text-center py-3"
+    >
+      © 2021 Copyright
+    </div>
+  </footer>
+</div>
+`;

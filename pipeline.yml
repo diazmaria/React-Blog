@@ -28,7 +28,7 @@ jobs:
                 cd repo
                 yarn
                 yarn test
-  - name: build-job
+  - name: build
     serial_groups:
       - blog-pipeline
     public: true
