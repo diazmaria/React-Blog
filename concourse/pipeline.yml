@@ -1,13 +1,14 @@
 resources:
-  - name: repo
+  - name: git-repo
     type: git
+    icon: github
     source:
       uri: https://github.com/diazmaria/upskilling-project.git
       branch: main
 jobs:
   - name: unit-tests
     plan:
-      - get: repo
+      - get: git-repo
         trigger: true
       - task: unit-tests
         config:
@@ -16,18 +17,18 @@ jobs:
             type: docker-image
             source: { repository: node }
           inputs:
-            - name: repo
+            - name: git-repo
           run:
             path: sh
             args:
               - "-exc"
               - |
-                cd repo
+                cd git-repo
                 yarn install --silent
                 yarn test
   - name: build
     plan:
-      - get: repo
+      - get: git-repo
         passed: [unit-tests]
         trigger: true
       - task: build
@@ -37,19 +38,19 @@ jobs:
             type: docker-image
             source: { repository: node }
           inputs:
-            - name: repo
+            - name: git-repo
           run:
             path: sh
             args:
               - "-exc"
               - |
-                cd repo
+                cd git-repo
                 yarn install --silent
                 yarn build
   - name: deploy
     public: true
     plan:
-      - get: repo
+      - get: git-repo
         passed: [build]
         trigger: true
       - task: deploy
@@ -59,10 +60,10 @@ jobs:
             type: docker-image
             source: { repository: node }
           inputs:
-            - name: repo
+            - name: git-repo
           run:
             path: sh
             args:
               - "-exc"
               - |
-                echo Deploying application...
+                echo Deploying application...🎉
