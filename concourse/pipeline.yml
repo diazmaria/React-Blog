@@ -2,13 +2,10 @@ resources:
   - name: repo
     type: git
     source:
-      uri: https://github.com/diazmaria/React-Blog.git
+      uri: https://github.com/diazmaria/upskilling-project.git
       branch: main
 jobs:
   - name: unit-tests
-    serial_groups:
-      - blog-pipeline
-    public: true
     plan:
       - get: repo
         trigger: true
@@ -24,14 +21,11 @@ jobs:
             path: sh
             args:
               - "-exc"
-              - |-
+              - |
                 cd repo
-                yarn
+                yarn install --silent
                 yarn test
   - name: build
-    serial_groups:
-      - blog-pipeline
-    public: true
     plan:
       - get: repo
         passed: [unit-tests]
@@ -48,13 +42,11 @@ jobs:
             path: sh
             args:
               - "-exc"
-              - |-
+              - |
                 cd repo
-                yarn
+                yarn install --silent
                 yarn build
   - name: deploy
-    serial_groups:
-      - blog-pipeline
     public: true
     plan:
       - get: repo
@@ -72,5 +64,5 @@ jobs:
             path: sh
             args:
               - "-exc"
-              - |-
-                echo deploying app now.... work in progress
+              - |
+                echo Deploying application...
