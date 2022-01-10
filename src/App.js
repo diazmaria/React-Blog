@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/navbar/Navbar";
-import { Footer } from "./components/footer/Footer";
-import { BlogSection } from "./components/blog-section/BlogSection";
+import { JournalSection } from "./components/journal-section/JournalSection";
 import { Post } from "./components/post/Post";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/components.scss";
@@ -12,12 +11,11 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<BlogSection />}></Route>
-        <Route path="/:slug" element={<BlogSection />}></Route>
+        <Route path="/" element={<JournalSection />}></Route>
+        <Route path="/:slug" element={<JournalSection />}></Route>
         <Route path="/post/:slug" element={<Post />}></Route>
         <Route exact path="/about"></Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 };

@@ -5,7 +5,7 @@ export const Navbar = () => {
     <nav>
       <div className="navbar">
         <h1 className="navbar__title">
-          <Link to="/">Senior Upskilling Portfolio</Link>
+          <Link to="/">Senior Upskilling Journal</Link>
         </h1>
         <ul className="navbar__menu">
           <li>
@@ -25,7 +25,7 @@ export const Navbar = () => {
             <br />
             Fulfillment comes from the journey that got you there
           </p>
-          <p>- Simon Sinek</p>
+          <p className="navbar__quote-author">- Simon Sinek</p>
           <hr />
         </div>
       </div>

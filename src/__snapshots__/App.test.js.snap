@@ -12,7 +12,7 @@ exports[`renders learn react link 1`] = `
         <a
           href="/"
         >
-          Senior Upskilling Portfolio
+          Senior Upskilling Journal
         </a>
       </h1>
       <ul
@@ -57,10 +57,10 @@ exports[`renders learn react link 1`] = `
     </div>
   </nav>
   <div
-    class="blog-section"
+    class="journal-section"
   >
     <h2
-      class="blog-section__title"
+      class="journal-section__title"
     >
       latest
     </h2>
@@ -73,12 +73,5 @@ exports[`renders learn react link 1`] = `
       />
     </div>
   </div>
-  <footer>
-    <div
-      class="footer-copyright text-center py-3"
-    >
-      © 2021 Copyright
-    </div>
-  </footer>
 </div>
 `;
