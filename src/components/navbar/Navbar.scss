@@ -4,14 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 0;
+  padding: 26px 0;
   background-image: url("https://media.istockphoto.com/photos/blue-light-defocused-blurred-motion-abstract-background-picture-id1212284111?k=20&m=1212284111&s=612x612&w=0&h=sYaAKVxAEmsDVmbXs_iMzZkzanRlfB4nMWp7QsULWD0=");
   background-size: cover;
 
   &__title {
     font-size: 61px;
     margin-bottom: 40px;
-    font-weight: bold;
 
     a:hover {
       opacity: 70%;
@@ -45,10 +44,10 @@
 
   &__quote {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 15px;
-    font-weight: bold;
-    color: black;
+    font-style: italic;
+    color: #1f1f1f;
     text-shadow: none;
   }
 

@@ -1,4 +1,6 @@
 .post {
+  padding-bottom: 60px;
+
   &__title {
     font-size: 40px;
     text-align: center;
@@ -20,11 +22,11 @@
   }
 
   &__item {
+    margin-top: 30px;
     list-style-type: none;
     width: 900px;
-    font-size: 19px;
-    font-weight: bold;
-    color: #5c5c5c;
+    font-size: 17px;
+    color: #383838;
 
     a:hover {
       opacity: 70%;
@@ -38,4 +40,7 @@
     margin-top: 20px;
   }
 
+  &__takeaway-image {
+
+  }
 }

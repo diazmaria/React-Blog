@@ -10,6 +10,8 @@ const takeawayPoint = (takeaway) => (
     </h2>
 
     <p>{takeaway?.takeaway}</p>
+
+    {takeaway?.image &&  <img className="post__takeaway-image" alt="post-image" src={takeaway?.image} /> }
   </li>
 );
 
@@ -39,7 +41,6 @@ export const Post = () => {
       <div className="post__content">
         <img alt="post-image" className="post__image" src={data.image} />
         <br />
-        <h3>🔑 KEY TAKEAWAYS</h3>
         <ul>{data?.takeaways?.map((takeaway) => takeawayPoint(takeaway))}</ul>
       </div>
     </div>

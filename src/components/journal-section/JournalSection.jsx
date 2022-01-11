@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import { CardGrid } from "../card-grid/CardGrid";
 
 export const JournalSection = () => {
-  const { slug = "latest" } = useParams();
+  const { slug } = useParams();
 
   return (
     <div className="journal-section">

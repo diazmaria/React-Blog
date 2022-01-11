@@ -14,16 +14,11 @@ export const Navbar = () => {
           <li>
             <Link to="/softskills">Soft Skills</Link>
           </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
         </ul>
         <div className="navbar__quote">
           <hr />
           <p>
-            Excitement comes from the achivement.
-            <br />
-            Fulfillment comes from the journey that got you there
+          The greatest contribution of a leader is to make other leaders
           </p>
           <p className="navbar__quote-author">- Simon Sinek</p>
           <hr />
