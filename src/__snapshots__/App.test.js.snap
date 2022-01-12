@@ -43,7 +43,7 @@ exports[`renders learn react link 1`] = `
         <p
           class="navbar__quote-author"
         >
-          - Simon Sinek
+          - Conrad Langworthy
         </p>
         <hr />
       </div>
