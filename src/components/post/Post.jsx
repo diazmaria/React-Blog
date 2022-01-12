@@ -9,7 +9,7 @@ const takeawayPoint = (takeaway) => (
       <b>{takeaway?.title}</b>
     </h2>
 
-    <p>{takeaway?.takeaway}</p>
+    <p dangerouslySetInnerHTML={{ __html: takeaway?.takeaway }}></p>
 
     {takeaway?.image &&  <img className="post__takeaway-image" alt="post-image" src={takeaway?.image} /> }
   </li>

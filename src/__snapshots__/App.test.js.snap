@@ -32,24 +32,17 @@ exports[`renders learn react link 1`] = `
             Soft Skills
           </a>
         </li>
-        <li>
-          <a
-            href="/about"
-          >
-            About
-          </a>
-        </li>
       </ul>
       <div
         class="navbar__quote"
       >
         <hr />
         <p>
-          Excitement comes from the achivement.
-          <br />
-          Fulfillment comes from the journey that got you there
+          The greatest contribution of a leader is to make other leaders
         </p>
-        <p>
+        <p
+          class="navbar__quote-author"
+        >
           - Simon Sinek
         </p>
         <hr />
@@ -62,15 +55,58 @@ exports[`renders learn react link 1`] = `
     <h2
       class="journal-section__title"
     >
-      latest
+      About us
     </h2>
     <hr />
     <div
-      class="card-grid"
+      class="about"
     >
       <div
-        class="card-grid__content"
-      />
+        class="about__content"
+      >
+        <div
+          class="about__member"
+        >
+          <img
+            alt="about-image2"
+            src="https://avatars.githubusercontent.com/u/14214966?v=4"
+          />
+          <h1>
+            Suraj Kalsi
+          </h1>
+          <p
+            class="about__description"
+          >
+            Software Developer 2
+          </p>
+          <p
+            class="about__description"
+          >
+            Peacock XTV
+          </p>
+        </div>
+        <div
+          class="about__member"
+        >
+          <img
+            alt="about-image1"
+            src="https://avatars.githubusercontent.com/u/16324893?v=4"
+          />
+          <h1>
+            Maria Diaz
+          </h1>
+          <p
+            class="about__description"
+          >
+            Software Developer 2
+          </p>
+          <p
+            class="about__description"
+          >
+            NOW Web
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
