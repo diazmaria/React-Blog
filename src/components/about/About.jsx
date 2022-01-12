@@ -3,8 +3,8 @@ export const About = () => {
     <div className="journal-section">
       <h2 className="journal-section__title">About us</h2>
       <hr />
-      <div class="about">
-        <div class="about__content">
+      <div className="about">
+        <div className="about__content">
           <div className="about__member">
             <img
               alt="about-image2"
