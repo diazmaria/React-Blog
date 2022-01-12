@@ -7,10 +7,13 @@
     font-size: 19px;
 }
 
+&__member {
+  padding: 20px;
+}
+
   &__content {
     display: flex;
-    flex-direction: column;
-    padding: 40px;
+    padding: 20px;
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -22,12 +25,6 @@
       margin-bottom: 10px;
     }
 
-    &__member {
-      display: flex;
-      padding: 40px;
-      flex-direction: row;
-      text-align: center;
-      text-align: center;
-    }
+
   }
 }

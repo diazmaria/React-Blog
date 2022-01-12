@@ -12,7 +12,7 @@ exports[`renders learn react link 1`] = `
         <a
           href="/"
         >
-          Senior Upskilling Journal
+          Senior Upskilling Scheme
         </a>
       </h1>
       <ul

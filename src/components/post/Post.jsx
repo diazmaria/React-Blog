@@ -32,7 +32,7 @@ export const Post = () => {
       }
     };
     fetchData();
-  }, []);
+  }, [slug]);
 
   return (
     <div className="post">

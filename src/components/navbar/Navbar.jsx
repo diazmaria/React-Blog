@@ -5,7 +5,7 @@ export const Navbar = () => {
     <nav>
       <div className="navbar">
         <h1 className="navbar__title">
-          <Link to="/">Senior Upskilling Journal</Link>
+          <Link to="/">Senior Upskilling Scheme</Link>
         </h1>
         <ul className="navbar__menu">
           <li>
