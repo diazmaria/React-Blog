@@ -18,7 +18,7 @@ export const Navbar = () => {
         <div className="navbar__quote">
           <hr />
           <p>The greatest contribution of a leader is to make other leaders</p>
-          <p className="navbar__quote-author">- Conrad Langworthy</p>
+          <p className="navbar__quote-author">- Simon Sinek</p>
           <hr />
         </div>
       </div>
